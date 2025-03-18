@@ -1,0 +1,15 @@
+/mnt/c/GEO/Notes/Uni/PF/hw6/hoareTriple/obj/Debug/net6.0/hoareTriple.csproj.AssemblyReference.cache
+/mnt/c/GEO/Notes/Uni/PF/hw6/hoareTriple/obj/Debug/net6.0/hoareTriple.GeneratedMSBuildEditorConfig.editorconfig
+/mnt/c/GEO/Notes/Uni/PF/hw6/hoareTriple/obj/Debug/net6.0/hoareTriple.AssemblyInfoInputs.cache
+/mnt/c/GEO/Notes/Uni/PF/hw6/hoareTriple/obj/Debug/net6.0/hoareTriple.AssemblyInfo.cs
+/mnt/c/GEO/Notes/Uni/PF/hw6/hoareTriple/obj/Debug/net6.0/hoareTriple.csproj.CoreCompileInputs.cache
+/mnt/c/GEO/Notes/Uni/PF/hw6/hoareTriple/hoareTriple
+/mnt/c/GEO/Notes/Uni/PF/hw6/hoareTriple/obj/Debug/net6.0/hoareTriple.dll
+/mnt/c/GEO/Notes/Uni/PF/hw6/hoareTriple/obj/Debug/net6.0/refint/hoareTriple.dll
+/mnt/c/GEO/Notes/Uni/PF/hw6/hoareTriple/obj/Debug/net6.0/hoareTriple.pdb
+/mnt/c/GEO/Notes/Uni/PF/hw6/hoareTriple/hoareTriple.deps.json
+/mnt/c/GEO/Notes/Uni/PF/hw6/hoareTriple/obj/Debug/net6.0/hoareTriple.genruntimeconfig.cache
+/mnt/c/GEO/Notes/Uni/PF/hw6/hoareTriple/hoareTriple.runtimeconfig.json
+/mnt/c/GEO/Notes/Uni/PF/hw6/hoareTriple/hoareTriple.dll
+/mnt/c/GEO/Notes/Uni/PF/hw6/hoareTriple/obj/Debug/net6.0/ref/hoareTriple.dll
+/mnt/c/GEO/Notes/Uni/PF/hw6/hoareTriple/hoareTriple.pdb

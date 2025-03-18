@@ -1,0 +1,16 @@
+.ORIG x3000
+
+LEA R0, A
+AND R1, R1, #0
+AND R2, R2, #0
+AND R3, R3, #0
+AND R4, R4, #0
+
+STR R1,R0, #0
+STR R2, R0, #1
+STR R3, R0, #2
+STR R4, R0, #3
+
+HALT
+ A .BLKW 4
+.END

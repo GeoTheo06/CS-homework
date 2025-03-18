@@ -1,0 +1,15 @@
+/mnt/c/GEO/Notes/Uni/PF/hw6/primes/obj/Debug/net6.0/primes.csproj.AssemblyReference.cache
+/mnt/c/GEO/Notes/Uni/PF/hw6/primes/obj/Debug/net6.0/primes.GeneratedMSBuildEditorConfig.editorconfig
+/mnt/c/GEO/Notes/Uni/PF/hw6/primes/obj/Debug/net6.0/primes.AssemblyInfoInputs.cache
+/mnt/c/GEO/Notes/Uni/PF/hw6/primes/obj/Debug/net6.0/primes.AssemblyInfo.cs
+/mnt/c/GEO/Notes/Uni/PF/hw6/primes/obj/Debug/net6.0/primes.csproj.CoreCompileInputs.cache
+/mnt/c/GEO/Notes/Uni/PF/hw6/primes/primes
+/mnt/c/GEO/Notes/Uni/PF/hw6/primes/obj/Debug/net6.0/primes.dll
+/mnt/c/GEO/Notes/Uni/PF/hw6/primes/obj/Debug/net6.0/refint/primes.dll
+/mnt/c/GEO/Notes/Uni/PF/hw6/primes/obj/Debug/net6.0/primes.pdb
+/mnt/c/GEO/Notes/Uni/PF/hw6/primes/primes.deps.json
+/mnt/c/GEO/Notes/Uni/PF/hw6/primes/obj/Debug/net6.0/primes.genruntimeconfig.cache
+/mnt/c/GEO/Notes/Uni/PF/hw6/primes/primes.runtimeconfig.json
+/mnt/c/GEO/Notes/Uni/PF/hw6/primes/primes.dll
+/mnt/c/GEO/Notes/Uni/PF/hw6/primes/obj/Debug/net6.0/ref/primes.dll
+/mnt/c/GEO/Notes/Uni/PF/hw6/primes/primes.pdb

@@ -1,0 +1,15 @@
+/mnt/c/GEO/Notes/Uni/PF/hw6/sqcube/obj/Debug/net6.0/sqcube.csproj.AssemblyReference.cache
+/mnt/c/GEO/Notes/Uni/PF/hw6/sqcube/obj/Debug/net6.0/sqcube.GeneratedMSBuildEditorConfig.editorconfig
+/mnt/c/GEO/Notes/Uni/PF/hw6/sqcube/obj/Debug/net6.0/sqcube.AssemblyInfoInputs.cache
+/mnt/c/GEO/Notes/Uni/PF/hw6/sqcube/obj/Debug/net6.0/sqcube.AssemblyInfo.cs
+/mnt/c/GEO/Notes/Uni/PF/hw6/sqcube/obj/Debug/net6.0/sqcube.csproj.CoreCompileInputs.cache
+/mnt/c/GEO/Notes/Uni/PF/hw6/sqcube/sqcube
+/mnt/c/GEO/Notes/Uni/PF/hw6/sqcube/obj/Debug/net6.0/sqcube.dll
+/mnt/c/GEO/Notes/Uni/PF/hw6/sqcube/obj/Debug/net6.0/refint/sqcube.dll
+/mnt/c/GEO/Notes/Uni/PF/hw6/sqcube/obj/Debug/net6.0/sqcube.pdb
+/mnt/c/GEO/Notes/Uni/PF/hw6/sqcube/sqcube.deps.json
+/mnt/c/GEO/Notes/Uni/PF/hw6/sqcube/obj/Debug/net6.0/sqcube.genruntimeconfig.cache
+/mnt/c/GEO/Notes/Uni/PF/hw6/sqcube/sqcube.runtimeconfig.json
+/mnt/c/GEO/Notes/Uni/PF/hw6/sqcube/sqcube.dll
+/mnt/c/GEO/Notes/Uni/PF/hw6/sqcube/obj/Debug/net6.0/ref/sqcube.dll
+/mnt/c/GEO/Notes/Uni/PF/hw6/sqcube/sqcube.pdb

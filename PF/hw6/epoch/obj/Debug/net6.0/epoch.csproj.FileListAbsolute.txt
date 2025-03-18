@@ -1,0 +1,15 @@
+/mnt/c/GEO/Notes/Uni/PF/hw6/epoch/obj/Debug/net6.0/epoch.csproj.AssemblyReference.cache
+/mnt/c/GEO/Notes/Uni/PF/hw6/epoch/obj/Debug/net6.0/epoch.GeneratedMSBuildEditorConfig.editorconfig
+/mnt/c/GEO/Notes/Uni/PF/hw6/epoch/obj/Debug/net6.0/epoch.AssemblyInfoInputs.cache
+/mnt/c/GEO/Notes/Uni/PF/hw6/epoch/obj/Debug/net6.0/epoch.AssemblyInfo.cs
+/mnt/c/GEO/Notes/Uni/PF/hw6/epoch/obj/Debug/net6.0/epoch.csproj.CoreCompileInputs.cache
+/mnt/c/GEO/Notes/Uni/PF/hw6/epoch/epoch
+/mnt/c/GEO/Notes/Uni/PF/hw6/epoch/obj/Debug/net6.0/epoch.dll
+/mnt/c/GEO/Notes/Uni/PF/hw6/epoch/obj/Debug/net6.0/refint/epoch.dll
+/mnt/c/GEO/Notes/Uni/PF/hw6/epoch/obj/Debug/net6.0/epoch.pdb
+/mnt/c/GEO/Notes/Uni/PF/hw6/epoch/epoch.deps.json
+/mnt/c/GEO/Notes/Uni/PF/hw6/epoch/obj/Debug/net6.0/epoch.genruntimeconfig.cache
+/mnt/c/GEO/Notes/Uni/PF/hw6/epoch/epoch.runtimeconfig.json
+/mnt/c/GEO/Notes/Uni/PF/hw6/epoch/epoch.dll
+/mnt/c/GEO/Notes/Uni/PF/hw6/epoch/obj/Debug/net6.0/ref/epoch.dll
+/mnt/c/GEO/Notes/Uni/PF/hw6/epoch/epoch.pdb

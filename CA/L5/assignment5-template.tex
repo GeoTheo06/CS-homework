@@ -1,0 +1,208 @@
+%%%%
+\documentclass[10pt,answers]{exam}
+\usepackage{times}
+\usepackage{enumerate}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{hyperref}
+\usepackage{ragged2e}
+\usepackage{graphicx}
+\usepackage{blindtext}
+\usepackage{pgf}
+\usepackage{tikz}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{blkarray}
+\usepackage{amsfonts}
+\usepackage{listings}
+
+
+\lstset{
+    basicstyle=\ttfamily,
+    frame=single,
+    numbers=none,
+    showstringspaces=false,
+    breaklines=true,
+}
+\DeclareFontShape{OT1}{cmtt}{bx}{n}{<5><6><7><8><9><10><10.95><12><14.4><17.28><20.74><24.88>cmttb10}{}
+
+\usetikzlibrary{arrows,automata,matrix}
+
+%Feel free to add packages and newcommands here if you wish
+   
+%%%%
+% IMPORTANT: YOU SHOULD INSTANTIATE THE FOLLOWING THREE COMMANDS WITH YOUR OWN DETAILS
+\newcommand{\authorname}{George Theodoridis}     %%% Write your first and last name
+\newcommand{\authornumber}{S5951178}  %%% Write your student number
+\newcommand{\assignmentnumber}{5}  %%% Write 1, 2, 3, etc
+%%%%
+
+%%%% DO NOT MODIFY 
+
+\pagestyle{headandfoot}
+\runningheadrule
+\firstpageheader{Computer Architecture (2024-2025)}{{\textbf{Assignment}~\assignmentnumber} \\ \today}{}
+\runningheader{Individual solutions by \authorname~(\authornumber)}
+              {}
+              {Page \thepage\ of \numpages}
+\firstpagefooter{}{}{}
+\runningfooter{}{}{}
+\newcommand{\qpoints}[1]{\hfill \textbf{(#1 points)}}
+ 
+\begin{document}
+ \boxedpoints
+\begin{center}
+  \fbox{\fbox{\parbox{0.97\textwidth}{\centering
+  {\Large
+ \authorname~(\authornumber)  }}}
+ }
+\end{center}
+
+\begin{enumerate}
+\item[] \textbf{INSTRUCTIONS}
+
+\item Submission is only via Themis for the practical exercises and via Brightspace for the theoretical exercises. Deadlines are strict.
+
+\item The exercises in this assignment add up to 100 points. To calculate your grade simply divide the number of points by 10.
+
+\item You must submit a pdf typeset in (La)TeX (no handwritten solutions) using \textbf{this} template.
+
+\item Seeking solutions from the internet, from any external resource, or from any other person is prohibited.
+
+\item Please note that the course lecturer reserves the right to ask the student submitting the assignment to explain the answers to any or all questions. If the student is unable to provide a satisfactory answer then that question may receive partial/no credit. 
+
+\item Of course, university policies on plagiarism always apply. In particular, any suspected plagiarism will be reported to the Board of Examiners.
+\end{enumerate}
+\rule{6cm}{0.4pt}
+
+\bigskip
+\bigskip
+
+
+%%% MODIFICATIONS ALLOWED FROM HERE
+
+\begin{questions}
+
+\question You are given the following LC3 ASM program! For this exercise, you have two tasks:  \qpoints{10}
+\begin{enumerate}
+    \item Write the symbol table (use an absolute address, not offsets)
+    \item Manually assemble (aka convert to the internal LC3 representation) the instructions at A, B and D. Both binary and hex are fine.
+\end{enumerate}
+
+\begin{lstlisting}
+.ORIG x3000
+    AND R0, R0, #0
+A   LD R1, E
+    AND R2, R1, #1
+    BRp C
+B   ADD R1, R1, #-1
+C   ADD R0, R0, R1
+    ADD R1, R1, #-2
+D   BRp C
+    ST R0, F
+    TRAP x25
+E  .BLKW 1
+F  .BLKW 1
+   .END
+\end{lstlisting} 
+
+
+\begin{solution}
+    \begin{enumerate}
+		\item 
+		\begin{lstlisting}[language={}]
+			x3000      AND   R0,R0,#0
+			
+			x3001   A: LD    R1,E
+			x3002      AND   R2,R1,#1
+			x3003      BRp   C
+			
+			x3004   B: ADD   R1,R1,#-1
+			
+			x3005   C: ADD   R0,R0,R1
+			x3006      ADD   R1,R1,#-2
+			
+			x3007   D: BRp   C
+			x3008      ST    R0,F
+			x3009      TRAP  x25
+			
+			x300A   E: .BLKW 1
+			
+			x300B   F: .BLKW 1
+			\end{lstlisting}
+			\item 
+			\begin{verbatim}
+				0010 001 000001000
+				0101 010 001 1 00001
+				0000 001 000000001
+				0001 001 001 1 11111
+				0001 000 000 000 001
+				0001 001 001 1 11110
+				0000 001 111111101
+				0011 000 000 000000010
+				1111 0000 0010 0101
+				0000000000000000
+				0000000000000000
+				\end{verbatim}
+		
+	\end{enumerate}
+\end{solution}
+
+
+\question For this exercise we will assume that two new operations have been added to LC3: \texttt{PUSH} and \texttt{POP}. The instruction \texttt{PUSH Rx} pushes the value in Register x onto the stack. \texttt{POP Rx} removes a value from the stack and loads it into Rx. You are also given a list of the instructions which were executed, however some of the registers went missing. Fill out what the correct registers would be! \qpoints{10}
+
+\noindent\begin{tabular}{|c|c|}
+\hline
+\textbf{BEFORE} & \textbf{AFTER} \\
+\hline
+\begin{tabular}{r|l}
+R0 & x0000 \\
+R1 & x1111 \\
+R2 & x2222 \\
+R3 & x3333 \\
+R4 & x4444 \\
+R5 & x5555 \\
+R6 & x6666 \\
+R7 & x7777 \\
+\end{tabular} &
+\begin{tabular}{r|l}
+R0 & x1111 \\
+R1 & x1111 \\
+R2 & x3333 \\
+R3 & x3333 \\
+R4 & x4444 \\
+R5 & x5555 \\
+R6 & x6666 \\
+R7 & x4444 \\
+\end{tabular} \\
+\hline
+\end{tabular}
+
+% Operations (lstlisting)
+\noindent\textbf{Operations:}
+\begin{lstlisting}[frame=single]
+PUSH R4
+PUSH (a)
+POP (b)
+PUSH (c)
+POP R2
+POP (d)
+\end{lstlisting}
+
+\begin{solution}
+    \begin{lstlisting}[frame=single]
+		PUSH  R4
+		PUSH  R1
+		POP   R0
+		PUSH  R3
+		POP   R2
+		POP   R7
+	\end{lstlisting}
+\end{solution}
+
+
+\end{questions}
+\end{document}
+
+
+

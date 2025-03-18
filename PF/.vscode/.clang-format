@@ -1,0 +1,4 @@
+BasedOnStyle: Google
+IndentWidth: 4        # Number of spaces per indentation level
+TabWidth: 4           # Number of spaces to use for tabs
+ColumnLimit: 0		  # Disable wrapping 

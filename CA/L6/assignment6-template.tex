@@ -1,0 +1,137 @@
+%%%%
+\documentclass[10pt,answers]{exam}
+\usepackage{times}
+\usepackage{enumerate}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{hyperref}
+\usepackage{ragged2e}
+\usepackage{graphicx}
+\usepackage{blindtext}
+\usepackage{pgf}
+\usepackage{tikz}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{blkarray}
+\usepackage{amsfonts}
+\usepackage{listings}
+
+
+\lstset{
+    basicstyle=\ttfamily,
+    frame=single,
+    numbers=none,
+    showstringspaces=false,
+    breaklines=true,
+}
+\DeclareFontShape{OT1}{cmtt}{bx}{n}{<5><6><7><8><9><10><10.95><12><14.4><17.28><20.74><24.88>cmttb10}{}
+
+\usetikzlibrary{arrows,automata,matrix}
+
+%Feel free to add packages and newcommands here if you wish
+   
+%%%%
+% IMPORTANT: YOU SHOULD INSTANTIATE THE FOLLOWING THREE COMMANDS WITH YOUR OWN DETAILS
+\newcommand{\authorname}{George Theodoridis}     %%% Write your first and last name
+\newcommand{\authornumber}{S5951178}  %%% Write your student number
+\newcommand{\assignmentnumber}{6}  %%% Write 1, 2, 3, etc
+%%%%
+
+%%%% DO NOT MODIFY 
+
+\pagestyle{headandfoot}
+\runningheadrule
+\firstpageheader{Computer Architecture (2024-2025)}{{\textbf{Assignment}~\assignmentnumber} \\ \today}{}
+\runningheader{Individual solutions by \authorname~(\authornumber)}
+              {}
+              {Page \thepage\ of \numpages}
+\firstpagefooter{}{}{}
+\runningfooter{}{}{}
+\newcommand{\qpoints}[1]{\hfill \textbf{(#1 points)}}
+ 
+\begin{document}
+ \boxedpoints
+\begin{center}
+  \fbox{\fbox{\parbox{0.97\textwidth}{\centering
+  {\Large
+ \authorname~(\authornumber)  }}}
+ }
+\end{center}
+
+\begin{enumerate}
+\item[] \textbf{INSTRUCTIONS}
+
+\item Submission is only via Themis for the practical exercises and via Brightspace for the theoretical exercises. Deadlines are strict.
+
+\item The exercises in this assignment add up to 100 points. To calculate your grade simply divide the number of points by 10.
+
+\item You must submit a pdf typeset in (La)TeX (no handwritten solutions) using \textbf{this} template.
+
+\item Seeking solutions from the internet, from any external resource, or from any other person is prohibited.
+
+\item Please note that the course lecturer reserves the right to ask the student submitting the assignment to explain the answers to any or all questions. If the student is unable to provide a satisfactory answer then that question may receive partial/no credit. 
+
+\item Of course, university policies on plagiarism always apply. In particular, any suspected plagiarism will be reported to the Board of Examiners.
+\end{enumerate}
+\rule{6cm}{0.4pt}
+
+\bigskip
+\bigskip
+
+
+%%% MODIFICATIONS ALLOWED FROM HERE
+
+\begin{questions}
+
+\question A program is running in privilege mode (PSR[15] = 0). We set a breakpoint at location x2000. The operator immediately pushes the run button. What are the subsequent MAR/MDR values? \qpoints{10}
+
+\begin{tabular}{|r|l|}
+\hline
+\textbf{MAR} & \textbf{MDR} \\
+\hline
+x2000 & x8000 \\
+x2002 & x1050 \\
+x2003 & x0004 \\
+x1050 & xBCAE \\
+x10FF & x2800 \\
+x2800 & x2C04 \\
+x1051 & x1DA6 \\
+x1052 & x3C4D \\
+x10A0 & x2C0A \\
+\hline
+\end{tabular} 
+
+\question The LC-3 does not have an opcode for the logical function OR. That is, there are no instructions in the LC-3 ISA that performs the OR operation. However, we can write a sequence of instructions to implement the OR operation. Using available LC-3 instructions implement OR operation on R1, and R2 with the result in R3.  \qpoints{20}
+
+\begin{solution}\\
+    AND R3, R3, \#0\\
+	ADD R1, R1, R2\\
+	BRp true\\
+	BR skipTrue\\
+	true\\
+	ADD R3, R3, \#1\\
+	skipTrue\\
+\end{solution}
+
+\question Which LC-3 addressing mode makes the most sense to use under the following conditions? (There may be more than one correct answer to each of these; therefore, justify your answers with some explanation.) \qpoints{30}
+
+\begin{itemize}
+  \item You want to load one value from an address that is less than $\pm 28$ locations away.
+  \item You want to load one value from an address that is more than 28 locations away.
+  \item You want to load an array of sequential addresses.
+\end{itemize}
+	
+\begin{solution}
+    \begin{itemize}
+	\item I can use PC-relative addressing (with LD) since 28 locations are much smaller than the max 256 locations that pc-relative addressing fits
+	\item Again, I can use pc relative adrressing (LD) as long as the length of the locations does not exceed 256. if its out of range then I can use a base and an offset with LDR
+	\item for sequential addresses I can use base (to point at the first address of the array) and offset (to point to the element i want) (LDR/STR) 
+	\end{itemize}
+\end{solution}
+
+
+\end{questions}
+\end{document}
+
+
+

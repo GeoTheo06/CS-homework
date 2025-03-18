@@ -1,0 +1,15 @@
+/mnt/c/GEO/Notes/Uni/PF/hw6/missingDigit/obj/Debug/net6.0/missingDigit.csproj.AssemblyReference.cache
+/mnt/c/GEO/Notes/Uni/PF/hw6/missingDigit/obj/Debug/net6.0/missingDigit.GeneratedMSBuildEditorConfig.editorconfig
+/mnt/c/GEO/Notes/Uni/PF/hw6/missingDigit/obj/Debug/net6.0/missingDigit.AssemblyInfoInputs.cache
+/mnt/c/GEO/Notes/Uni/PF/hw6/missingDigit/obj/Debug/net6.0/missingDigit.AssemblyInfo.cs
+/mnt/c/GEO/Notes/Uni/PF/hw6/missingDigit/obj/Debug/net6.0/missingDigit.csproj.CoreCompileInputs.cache
+/mnt/c/GEO/Notes/Uni/PF/hw6/missingDigit/missingDigit
+/mnt/c/GEO/Notes/Uni/PF/hw6/missingDigit/obj/Debug/net6.0/missingDigit.dll
+/mnt/c/GEO/Notes/Uni/PF/hw6/missingDigit/obj/Debug/net6.0/refint/missingDigit.dll
+/mnt/c/GEO/Notes/Uni/PF/hw6/missingDigit/obj/Debug/net6.0/missingDigit.pdb
+/mnt/c/GEO/Notes/Uni/PF/hw6/missingDigit/missingDigit.deps.json
+/mnt/c/GEO/Notes/Uni/PF/hw6/missingDigit/obj/Debug/net6.0/missingDigit.genruntimeconfig.cache
+/mnt/c/GEO/Notes/Uni/PF/hw6/missingDigit/missingDigit.runtimeconfig.json
+/mnt/c/GEO/Notes/Uni/PF/hw6/missingDigit/missingDigit.dll
+/mnt/c/GEO/Notes/Uni/PF/hw6/missingDigit/obj/Debug/net6.0/ref/missingDigit.dll
+/mnt/c/GEO/Notes/Uni/PF/hw6/missingDigit/missingDigit.pdb

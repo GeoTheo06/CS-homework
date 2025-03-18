@@ -1,0 +1,9 @@
+.ORIG x3000
+AND R0, R0, #0
+AND R4, R4, #0
+LDR R4 R0 #6
+LD R5, mask
+AND R6, R5, R4
+HALT
+mask .FILL #448
+.END

@@ -1,0 +1,18 @@
+exam prep
+
+exam will have something like this and ask what does it do
+
+LD R0, ASCII
+LD R1, NEG
+AGAIN LDI R2, DSR
+BRzp AGAIN
+STI R0, DDR
+ADD R0, R0, #1
+ADD R2, R0, R1
+BRnp AGAIN
+HALT
+ASCII .FILL x0041
+NEG .FILL xFFB6
+DSR .FILL xFE04
+DSR .FILL xFE06
+

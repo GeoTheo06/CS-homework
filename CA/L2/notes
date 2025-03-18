@@ -1,0 +1,11 @@
+Addressability = number of bits in each location (If the addressability is 2 bytes, each memory location corresponds to 2 bytes of data.)
+
+each location is addressed by an amount of bits where 0000... represents the first location in memory and 1111... the last. That means that if each location has 2 bits and we have 15 locations (the bits that are needed to address each location are 15) then the total number of bits that can be stored are 2^15
+
+multiplexers: https://www.youtube.com/watch?v=HKw1FUaXs9w
+
+πως να κανεις two 2bit multiplication: https://www.youtube.com/watch?v=7Bz9IgFNhDo
+
+decoders just translate the binary input into decimal values (for example 2-4 decoder will take 11 and then only the 4th output will be active)
+
+create a 4-16 bit decoder using 2-4 bit decoders https://www.youtube.com/watch?v=Kz1J7OaRDb4
