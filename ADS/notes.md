@@ -44,7 +44,7 @@ search tree does not support duplicate values
 ### priority queue (with heap): 
 
 Upheap: if parent bigger then swap
-downheap: go to the biggest child
+downheap: go to the last child
 
 to restore heap order after inserting a number: imagine you put the number after the last node (after the last element in an array | next to the last child in a tree) then do upheap to restore heap.
 ![[Pasted image 20250305152232.png]]
