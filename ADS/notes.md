@@ -1,3 +1,12 @@
+Dijkstra using a Min-Heap + Adjacency List
+Each node is initially inserted into the priority queue: O(V log V)
+Each edge may cause a decrease-key operation (edge relax): O(E log V)
+Total time complexity: O((V + E) log V)
+
+
+
+the depth of a tree starts counting from 0. e.g. The depth of a tree with 1 node is 0.
+
 ! in compact tries, to create the indexing, you use the initial state (not the compressed state)
 Go see example to make clearer
 
@@ -23,7 +32,9 @@ def BFS(graph, start):
                 queue.append(neighbor)
 ```
 
-"Suppose we apply BFS and DFS to the same simple connected graph. What do we know about the height of the two resulting spanning trees? Explain and justify your answer! In the BFS spanning tree each branch from the root to a leaf corresponds to a shortest path. Hence the height of the BFS spanning tree is lower than or equal to the height of the DFS spanning tree."
+"Suppose we apply BFS and DFS to the same simple connected graph. What do we know about the height of the two resulting spanning trees? Explain and justify your answer! 
+
+In the BFS spanning tree each branch from the root to a leaf corresponds to a shortest path. Hence the height of the BFS spanning tree is lower than or equal to the height of the DFS spanning tree."
 
 ! in lists everything happens on the first node:
 they implement addItem(item, list) by creating a node behind the node you give them (newNode->next = list) this means the node you give them has to be the first.
