@@ -1,0 +1,1 @@
+DELETE FROM WeddingEvents WHERE WeddingID = 3;
