@@ -53,7 +53,10 @@ grammar: <> means variables, [] means optional, | means or, {} means loop
 ![[Pasted image 20250407142847.png]]
 
 ![[Pasted image 20250407181353.png]]
-### euler graph
+
+## graphs
+for a connected graph, sum of degrees = 2 * edges
+#### euler graph
 Euler path uses every bridge (edge) (not vertex!) exactly once. (so the start and end node have to have odd degree)
 
 you can have at most two vertices of odd degree. (start at one and end at the other)
@@ -67,7 +70,7 @@ https://chatgpt.com/share/67c877bb-7b88-800b-a819-85708f62e771
 
 ### trees
 a tree with n nodes has n-1 edges
-sum of degrees = 2 * edges
+
 
 **simple path**: all nodes are different (we don't go over the same nodes)
 **simple cycle**: all nodes are different except begin and end (because its the same) and there have to be at least 3 
